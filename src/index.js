@@ -259,7 +259,7 @@ class CurrencyInput extends Component {
             <input
                 ref={(input) => { this.theInput = input; }}
                 type={this.props.inputType}
-                value={this.state.maskedValue}
+                value={this.props.value || this.state.maskedValue}
                 onChange={this.handleChange}
                 onFocus={this.handleFocus}
                 onMouseUp={this.handleFocus}
